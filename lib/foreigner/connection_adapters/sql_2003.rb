@@ -22,7 +22,7 @@ module Foreigner
         primary_key = options[:primary_key] || "id"
         dependency = dependency_sql(options[:dependent])
 
-        sql = "FOREIGN KEY (#{quote_column_name(column)}) REFERENCES #{quote_table_name(to_table)}(#{primary_key})"
+        sql = "FOREIGN KEY (#{quote_column_name(column)}) REFERENCES #{quote_table_name(to_table)}(#{quote_column_name(primary_key)})"
         sql << " #{dependency}" unless dependency.blank?
         sql
       end
