@@ -2,11 +2,11 @@
  
 Gem::Specification.new do |s|
   s.name = %q{foreigner}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
  
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Matthew Higgins"]
-  s.date = %q{2009-09-07}
+  s.authors = ["Matthew Higgins", "Matthias Viehweger"]
+  s.date = %q{2009-10-02}
   s.email = %q{developer@matthewhiggins.com}
   s.extra_rdoc_files = ["README"]
   s.files = %w(
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "foreigner"
   s.rubygems_version = "1.3.4"
   s.summary = "Foreign keys for Rails migrations"
-  s.description = "Foreign keys for Rails migrations"
+  s.description = "Foreign key-support for Rails migrations"
  
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
